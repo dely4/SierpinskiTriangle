@@ -1,10 +1,10 @@
 public void setup()
 {
-	size(525,525);
+	size(1025,1025);
 }
 public void draw()
 {
-	sierpinski(25,25,500);
+	sierpinski(25,25,1000);
 }
 public void mouseDragged()//optional
 {
@@ -12,7 +12,7 @@ public void mouseDragged()//optional
 }
 public void sierpinski(int x, int y, int len) 
 {
-	if(len<=50){
+	if(len<=1){
 		triangle(x, y, x+len, y, x+(len/2), y+len);
 	}
 	else{
